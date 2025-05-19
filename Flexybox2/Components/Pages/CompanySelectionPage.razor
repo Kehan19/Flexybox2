@@ -1,0 +1,98 @@
+@page "/"
+@rendermode InteractiveServer
+@using Flexybox2.Model
+@using Flexybox2.Services
+@inject ICompanyService CompanyService
+@inject NavigationManager NavigationManager
+
+<PageTitle> Select Restaurant </PageTitle>
+
+<h1>Company Selection</h1>
+
+<!-- Favorites Section -->
+@if (favoriteCompanies?.Count > 0)
+{
+    <div class="favorites-section">
+        <h2>Your Favorites</h2>
+        <div class="restaurant-grid">
+            @foreach (var restaurant in favoriteCompanies)
+            {
+                <div class="restaurant-card @(favoriteIds.Contains(restaurant.Id) ? "is-favorite" : "")" 
+                     @onclick="() => SelectRestaurant(restaurant.Id)">
+                    @if (favoriteIds.Contains(restaurant.Id))
+                    {
+                        <div class="card-header">
+                            <span class="star-icon"></span>
+                        </div>
+                    }
+                    <div class="restaurant-name">@restaurant.Name</div>
+                </div>
+            }
+        </div>
+    </div>
+}
+
+<!-- All Restaurants Section -->
+<div class="all-restaurants-section">
+    <h2>All Restaurants</h2>
+    <div class="restaurant-grid">
+        @if (restaurants == null)
+        {
+            <p>Loading...</p>
+        }
+        else
+        {
+            @foreach (var restaurant in restaurants)
+            {
+                <div class="restaurant-card @(favoriteIds.Contains(restaurant.Id) ? "is-favorite" : "")" 
+                     @onclick="() => SelectRestaurant(restaurant.Id)">
+                    @if (favoriteIds.Contains(restaurant.Id))
+                    {
+                        <div class="card-header">
+                            <span class="star-icon"></span>
+                        </div>
+                    }
+                    <div class="restaurant-name">@restaurant.Name</div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+@code {
+    private List<Company> restaurants;
+    private List<Company> favoriteCompanies;
+    private List<int> favoriteIds = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        restaurants = await CompanyService.getCompanies();
+        favoriteCompanies = await CompanyService.GetFavoriteCompaniesAsync();
+        favoriteIds = await CompanyService.GetFavoriteIdsAsync();
+        
+        // Subscribe to favorite changes
+        CompanyService.OnFavoriteAdded += OnFavoriteChanged;
+        CompanyService.OnFavoriteRemoved += OnFavoriteChanged;
+    }
+
+    private async void OnFavoriteChanged(int companyId)
+    {
+        // Refresh favorites when they change
+        favoriteCompanies = await CompanyService.GetFavoriteCompaniesAsync();
+        favoriteIds = await CompanyService.GetFavoriteIdsAsync();
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        // Unsubscribe from events
+        CompanyService.OnFavoriteAdded -= OnFavoriteChanged;
+        CompanyService.OnFavoriteRemoved -= OnFavoriteChanged;
+    }
+
+    private void SelectRestaurant(int id)
+    {
+        Console.WriteLine($"SelectRestaurant called with id: {id}");
+        NavigationManager.NavigateTo($"/company/{id}");
+    }
+}

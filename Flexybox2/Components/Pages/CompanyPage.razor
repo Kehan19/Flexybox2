@@ -1,0 +1,149 @@
+@page "/company/{Id:int}"
+@rendermode InteractiveServer
+@using Flexybox2.Services
+@using Flexybox2.Model
+@inject ICompanyService CompanyService
+@inject NavigationManager NavigationManager
+
+<PageTitle>@(restaurant?.Name ?? "Restaurant Details")</PageTitle>
+
+@if (restaurant == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <CompanyDetails 
+        Company="restaurant" 
+        IsFavorite="isFavorite" 
+        IsOpen="IsOpen()"
+        OnToggleFavorite="ToggleFavorite" />
+    
+    <Gallery Images="_galleryImages" />
+    
+    <OpeningHours Company="@restaurant" />
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+    
+    private Company restaurant;
+    private bool isFavorite = false;
+    
+    protected override async Task OnParametersSetAsync()
+    {
+        restaurant = await CompanyService.getCompanyById(Id);
+        
+        if (restaurant == null)
+        {
+            NavigationManager.NavigateTo("/");
+            return;
+        }
+        
+        isFavorite = await CompanyService.IsFavoriteAsync(Id);
+    }
+    
+    private void GoBack()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+    
+    private async Task ToggleFavorite()
+    {
+        if (isFavorite)
+        {
+            await CompanyService.RemoveFromFavoritesAsync(Id);
+            isFavorite = false;
+        }
+        else
+        {
+            await CompanyService.AddToFavoritesAsync(Id);
+            isFavorite = true;
+        }
+        StateHasChanged();
+    }
+    
+    private bool IsOpen()
+    {
+        // Get current day and time
+        var now = DateTime.Now;
+        var currentTime = now.TimeOfDay;
+        
+        // Determine day type
+        DayType dayType;
+        if (now.DayOfWeek >= DayOfWeek.Monday && now.DayOfWeek <= DayOfWeek.Thursday)
+        {
+            dayType = DayType.MondayToThursday;
+        }
+        else if (now.DayOfWeek == DayOfWeek.Friday)
+        {
+            dayType = DayType.Friday;
+        }
+        else if (now.DayOfWeek == DayOfWeek.Saturday)
+        {
+            dayType = DayType.Saturday;
+        }
+        else
+        {
+            dayType = DayType.Sunday;
+        }
+        
+        // Check if opening times exist for this day
+        if (!restaurant.OpeningTimesRestaurant.TryGetValue(dayType, out var OpeningTimes))
+        {
+            return false;
+        }
+
+        // If closed
+        if (string.IsNullOrEmpty(OpeningTimes) || OpeningTimes.ToLower() == "closed")
+        {
+            return false;
+        }
+        
+        // Parse opening hours (format: "07:00 - 22:00")
+        var parts = OpeningTimes.Split('-');
+        if (parts.Length != 2)
+        {
+            return false;
+        }
+        
+        try
+        {
+            var openTime = TimeSpan.Parse(parts[0].Trim());
+            var closeTime = TimeSpan.Parse(parts[1].Trim());
+            
+            return currentTime >= openTime && currentTime <= closeTime;
+        }
+        catch
+        {
+            return false;
+        }
+    }
+    
+    private readonly List<Gallery.GalleryImage> _galleryImages =
+    [
+        new Gallery.GalleryImage
+        {
+            Url = "Images/Gallery/coffee.jpg",
+            Alt = "Restaurant interior"
+        },
+
+        new Gallery.GalleryImage
+        {
+            Url = "/images/Gallery/restaurant.jpg",
+            Alt = "Food display"
+        }
+        /*new Gallery.GalleryImage
+        {
+            Url = "/images/dining-area.jpg",
+            Alt = "Dining area"
+        },
+        new Gallery.GalleryImage
+        {
+            Url = "/images/kitchen.jpg",
+            Alt = "Kitchen view"
+        }*/
+
+    ];
+}

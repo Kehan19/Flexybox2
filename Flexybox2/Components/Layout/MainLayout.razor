@@ -1,0 +1,30 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    @*<div class="sidebar">
+        <NavMenu/>
+    </div>*@
+
+    <main>
+        @*<div class="top-row px-4">
+            <!-- Add flexbox container to push items to opposite sides -->
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <a href="/" class="btn btn-outline-primary home-button">Home</a>
+                <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+            </div>
+        </div>*@
+
+        <article class="content px-4">
+            <div style="width: 448px; margin: 0 auto">
+                @Body
+            </div>
+            
+        </article>
+    </main>
+</div>
+
+<div id="blazor-error-ui" data-nosnippet>
+    An unhandled error has occurred.
+    <a href="." class="reload">Reload</a>
+    <span class="dismiss">🗙</span>
+</div>

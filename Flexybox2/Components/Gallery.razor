@@ -1,0 +1,30 @@
+@using Flexybox2.Model
+
+<div class="image-scroll-container" style="margin: 16px; overflow-x: auto; overflow-y: hidden;">
+    <div style="display: flex; gap: 12px; padding-bottom: 8px;">
+        @foreach (var image in Images)
+        {
+            <div class="image-frame">
+                <img src="@image.Url" 
+                     alt="@image.Alt" 
+                     class="gallery-image" />
+                @*@if (image.HasOverlay)
+                {
+                    <div class="overlay-icon">@image.OverlayIcon</div>
+                }*@
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter] public List<GalleryImage> Images { get; set; } = new();
+    
+    public class GalleryImage
+    {
+        public string Url { get; set; } = "";
+        public string Alt { get; set; } = "";
+        public bool HasOverlay { get; set; } = false;
+        public string OverlayIcon { get; set; } = "";
+    }
+}

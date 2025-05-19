@@ -1,0 +1,148 @@
+@*@using Flexybox2.Model
+
+<div class="opening-hours">
+    <h3 class="opening-hours-headline">Opening hours</h3>
+    
+    <div class="category-buttons">
+        <button class="category-btn @(selectedCategory == "Restaurant" ? "active" : "")"
+                @onclick="() => SelectCategory("Restaurant")">
+            Restaurant
+        </button>
+        <button class="category-btn @(selectedCategory == "Takeaway" ? "active" : "")"
+                @onclick="() => SelectCategory("Takeaway")">
+            Takeaway
+        </button>
+        <button class="category-btn @(selectedCategory == "Buffet" ? "active" : "")"
+                @onclick="() => SelectCategory("Buffet")">
+            Buffet
+        </button>
+        <button class="category-btn @(selectedCategory == "SpecialEvents" ? "active" : "")"
+                @onclick="() => SelectCategory("SpecialEvents")">
+            Special Events for Groups
+        </button>
+    </div>
+    
+    <div class="hours-display">
+        @foreach (var day in GetDisplayHours())
+        {
+            <div class="hours-row">
+                <span class="day-name">@FormatDayType(day.Key)</span>
+                <span class="hours-time @(day.Value == "Closed" ? "closed" : "")">@day.Value</span>
+            </div>
+        }
+    </div>
+</div>
+
+
+@code {
+    [Parameter] public Company Company { get; set; }
+    
+    private string selectedCategory = "Restaurant";
+    
+    private void SelectCategory(string category)
+    {
+        selectedCategory = category;
+    }
+    
+    private Dictionary<DayType, string> GetDisplayHours()
+    {
+        if (Company == null) return new Dictionary<DayType, string>();
+        
+        return selectedCategory switch
+        {
+            "Restaurant" => Company.OpeningTimesRestaurant ?? new(),
+            "Takeaway" => Company.OpeningTimesTakeaway ?? new(),
+            "Buffet" => Company.OpeningTimesBuffet ?? new(),
+            "SpecialEvents" => Company.OpeningTimesSpecialEvents ?? new(),
+            _ => new Dictionary<DayType, string>()
+        };
+    }
+    
+    private string FormatDayType(DayType dayType)
+    {
+        return dayType switch
+        {
+            DayType.MondayToThursday => "Monday - Thursday",
+            DayType.Friday => "Friday",
+            DayType.Saturday => "Saturday",
+            DayType.Sunday => "Sunday",
+            DayType.Holiday => "Holidays",
+            _ => dayType.ToString()
+        };
+    }
+}*@
+
+@using Flexybox2.Model
+@rendermode InteractiveServer
+
+<div class="opening-hours">
+    <h3>Opening hours</h3>
+    
+    <div class="category-buttons">
+        <button @onclick="SelectRestaurant" 
+                class="category-btn @(selectedCategory == "Restaurant" ? "active" : "")">
+            Restaurant
+        </button>
+        <button @onclick="SelectTakeaway" 
+                class="category-btn @(selectedCategory == "Takeaway" ? "active" : "")">
+            Takeaway
+        </button>
+        <button @onclick="SelectBuffet" 
+                class="category-btn @(selectedCategory == "Buffet" ? "active" : "")">
+            Buffet
+        </button>
+        <button @onclick="SelectSpecialEvents" 
+                class="category-btn @(selectedCategory == "SpecialEvents" ? "active" : "")">
+            Special Events
+        </button>
+    </div>
+    
+    <div class="hours-display">
+        @foreach (var day in GetDisplayHours())
+        {
+            <div class="hours-row">
+                <span class="day-name">@FormatDayType(day.Key)</span>
+                <span class="hours-time @(day.Value == "Closed" ? "closed" : "")">@day.Value</span>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter] public Company Company { get; set; }
+    
+    private string selectedCategory = "Restaurant";
+    
+    // Separate methods for each button
+    private void SelectRestaurant() => selectedCategory = "Restaurant";
+    private void SelectTakeaway() => selectedCategory = "Takeaway";
+    private void SelectBuffet() => selectedCategory = "Buffet";
+    private void SelectSpecialEvents() => selectedCategory = "SpecialEvents";
+    
+    private Dictionary<DayType, string> GetDisplayHours()
+    {
+        if (Company == null) return new Dictionary<DayType, string>();
+        
+        return selectedCategory switch
+        {
+            "Restaurant" => Company.OpeningTimesRestaurant ?? new(),
+            "Takeaway" => Company.OpeningTimesTakeaway ?? new(),
+            "Buffet" => Company.OpeningTimesBuffet ?? new(),
+            "SpecialEvents" => Company.OpeningTimesSpecialEvents ?? new(),
+            _ => new Dictionary<DayType, string>()
+        };
+    }
+    
+    private string FormatDayType(DayType dayType)
+    {
+        return dayType switch
+        {
+            DayType.MondayToThursday => "Monday - Thursday",
+            DayType.Friday => "Friday",
+            DayType.Saturday => "Saturday",
+            DayType.Sunday => "Sunday",
+            DayType.Holiday => "Holidays",
+            _ => dayType.ToString()
+        };
+    }
+}
