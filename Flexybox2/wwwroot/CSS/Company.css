@@ -4,6 +4,14 @@
     gap: 20px;
     margin: 20px 0;
 }
+.restaurant-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
 
 .restaurant-card {
     padding: 20px;
@@ -13,7 +21,7 @@
     border-radius: 9999px;
 
     /* Even lighter gray background */
-    background-color: #333333;
+    background-color: #000000;
 
     /* Text styling */
     color: white;  /* Darker text */

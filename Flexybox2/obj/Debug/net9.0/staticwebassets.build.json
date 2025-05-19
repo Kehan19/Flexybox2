@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3OdLdiegjeOqy07p5RQdWCO0kCcm3b4eCD9O5ZXep44=",
+  "Hash": "EZKNnDzsQ354KaDazoGuFmxRwnbSLrCkFcOs9VwRuAI=",
   "Source": "Flexybox2",
   "BasePath": "_content/Flexybox2",
   "Mode": "Default",
@@ -122,12 +122,12 @@
       "OriginalItemSpec": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-fqjny9gp4n.gz",
+      "Identity": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-65nfsm160k.gz",
       "SourceId": "Flexybox2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Flexybox2",
-      "RelativePath": "CSS/Company#[.{fingerprint=fqjny9gp4n}]?.css.gz",
+      "RelativePath": "CSS/Company#[.{fingerprint=65nfsm160k}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -136,8 +136,8 @@
       "RelatedAsset": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\wwwroot\\CSS\\Company.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "obn9w4a7dy",
-      "Integrity": "rBEL8pGpSeaLUpyJRTspHVUZBLmFfhwWodgcXk/ELBc=",
+      "Fingerprint": "c30rxk2gqx",
+      "Integrity": "yBVaUCzilVDCQA/28mL4h2dngAoiJo06bcBW8ZvkeKY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\wwwroot\\CSS\\Company.css"
@@ -1123,8 +1123,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fqjny9gp4n",
-      "Integrity": "pylddZ7NlywC46EyxqPpPiZFv5yclEfxXW+dqF5o0Jg=",
+      "Fingerprint": "65nfsm160k",
+      "Integrity": "6ma3kcU7P+Rn414n4hngXCmmkkqcxLd2E/QdxaQGtPU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\CSS\\Company.css"
@@ -2438,13 +2438,13 @@
       ]
     },
     {
-      "Route": "CSS/Company.css",
-      "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-fqjny9gp4n.gz",
+      "Route": "CSS/Company.65nfsm160k.css",
+      "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-65nfsm160k.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000456829603"
+          "Quality": "0.000560538117"
         }
       ],
       "ResponseHeaders": [
@@ -2454,19 +2454,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2188"
+          "Value": "1783"
         },
         {
           "Name": "ETag",
-          "Value": "\"rBEL8pGpSeaLUpyJRTspHVUZBLmFfhwWodgcXk/ELBc=\""
+          "Value": "\"yBVaUCzilVDCQA/28mL4h2dngAoiJo06bcBW8ZvkeKY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 13:18:42 GMT"
+          "Value": "Mon, 19 May 2025 13:36:46 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -2482,18 +2482,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"pylddZ7NlywC46EyxqPpPiZFv5yclEfxXW+dqF5o0Jg=\""
+          "Value": "W/\"6ma3kcU7P+Rn414n4hngXCmmkkqcxLd2E/QdxaQGtPU=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "65nfsm160k"
+        },
+        {
+          "Name": "label",
+          "Value": "CSS/Company.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-pylddZ7NlywC46EyxqPpPiZFv5yclEfxXW+dqF5o0Jg="
+          "Value": "sha256-6ma3kcU7P+Rn414n4hngXCmmkkqcxLd2E/QdxaQGtPU="
         }
       ]
     },
     {
-      "Route": "CSS/Company.css",
+      "Route": "CSS/Company.65nfsm160k.css",
       "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\wwwroot\\CSS\\Company.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2503,7 +2511,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8794"
+          "Value": "6930"
         },
         {
           "Name": "Content-Type",
@@ -2511,121 +2519,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pylddZ7NlywC46EyxqPpPiZFv5yclEfxXW+dqF5o0Jg=\""
+          "Value": "\"6ma3kcU7P+Rn414n4hngXCmmkkqcxLd2E/QdxaQGtPU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 13:18:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-pylddZ7NlywC46EyxqPpPiZFv5yclEfxXW+dqF5o0Jg="
-        }
-      ]
-    },
-    {
-      "Route": "CSS/Company.css.gz",
-      "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-fqjny9gp4n.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2188"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rBEL8pGpSeaLUpyJRTspHVUZBLmFfhwWodgcXk/ELBc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 13:18:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-rBEL8pGpSeaLUpyJRTspHVUZBLmFfhwWodgcXk/ELBc="
-        }
-      ]
-    },
-    {
-      "Route": "CSS/Company.fqjny9gp4n.css",
-      "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-fqjny9gp4n.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000456829603"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2188"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rBEL8pGpSeaLUpyJRTspHVUZBLmFfhwWodgcXk/ELBc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 13:18:42 GMT"
+          "Value": "Mon, 19 May 2025 13:36:46 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"pylddZ7NlywC46EyxqPpPiZFv5yclEfxXW+dqF5o0Jg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fqjny9gp4n"
+          "Value": "65nfsm160k"
         },
         {
           "Name": "label",
@@ -2633,13 +2541,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pylddZ7NlywC46EyxqPpPiZFv5yclEfxXW+dqF5o0Jg="
+          "Value": "sha256-6ma3kcU7P+Rn414n4hngXCmmkkqcxLd2E/QdxaQGtPU="
         }
       ]
     },
     {
-      "Route": "CSS/Company.fqjny9gp4n.css",
-      "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\wwwroot\\CSS\\Company.css",
+      "Route": "CSS/Company.65nfsm160k.css.gz",
+      "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-65nfsm160k.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2648,7 +2556,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8794"
+          "Value": "1783"
         },
         {
           "Name": "Content-Type",
@@ -2656,56 +2564,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pylddZ7NlywC46EyxqPpPiZFv5yclEfxXW+dqF5o0Jg=\""
+          "Value": "\"yBVaUCzilVDCQA/28mL4h2dngAoiJo06bcBW8ZvkeKY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 13:18:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fqjny9gp4n"
-        },
-        {
-          "Name": "label",
-          "Value": "CSS/Company.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-pylddZ7NlywC46EyxqPpPiZFv5yclEfxXW+dqF5o0Jg="
-        }
-      ]
-    },
-    {
-      "Route": "CSS/Company.fqjny9gp4n.css.gz",
-      "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-fqjny9gp4n.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2188"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rBEL8pGpSeaLUpyJRTspHVUZBLmFfhwWodgcXk/ELBc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 13:18:42 GMT"
+          "Value": "Mon, 19 May 2025 13:36:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2723,7 +2586,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fqjny9gp4n"
+          "Value": "65nfsm160k"
         },
         {
           "Name": "label",
@@ -2731,7 +2594,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-rBEL8pGpSeaLUpyJRTspHVUZBLmFfhwWodgcXk/ELBc="
+          "Value": "sha256-yBVaUCzilVDCQA/28mL4h2dngAoiJo06bcBW8ZvkeKY="
+        }
+      ]
+    },
+    {
+      "Route": "CSS/Company.css",
+      "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-65nfsm160k.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000560538117"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1783"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yBVaUCzilVDCQA/28mL4h2dngAoiJo06bcBW8ZvkeKY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 13:36:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"6ma3kcU7P+Rn414n4hngXCmmkkqcxLd2E/QdxaQGtPU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6ma3kcU7P+Rn414n4hngXCmmkkqcxLd2E/QdxaQGtPU="
+        }
+      ]
+    },
+    {
+      "Route": "CSS/Company.css",
+      "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\wwwroot\\CSS\\Company.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6930"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6ma3kcU7P+Rn414n4hngXCmmkkqcxLd2E/QdxaQGtPU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 13:36:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6ma3kcU7P+Rn414n4hngXCmmkkqcxLd2E/QdxaQGtPU="
+        }
+      ]
+    },
+    {
+      "Route": "CSS/Company.css.gz",
+      "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-65nfsm160k.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1783"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yBVaUCzilVDCQA/28mL4h2dngAoiJo06bcBW8ZvkeKY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 13:36:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yBVaUCzilVDCQA/28mL4h2dngAoiJo06bcBW8ZvkeKY="
         }
       ]
     },
