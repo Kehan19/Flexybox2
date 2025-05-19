@@ -35,38 +35,6 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.restaurant-details {
-    padding: 20px;
-}
-
-.back-button {
-    margin-bottom: 20px;
-}
-
-.info-section {
-    margin: 20px 0;
-    
-}
-.home-button {
-    color: #fff;
-    border-color: #0d6efd;
-    text-decoration: none;
-}
-
-.home-button:hover {
-    background-color: #0d6efd;
-    border-color: #0d6efd;
-    color: #fff;
-}
-
-.home-button:focus {
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-}
-
-.home-button:active {
-    background-color: #0b5ed7;
-    border-color: #0a58ca;
-}
 .company-details {
     max-width: 600px;
     margin: 0 auto;
@@ -80,20 +48,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-}
-
-.back-button {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 50%;
-    transition: background-color 0.2s;
-}
-
-.back-button:hover {
-    background-color: rgba(0,0,0,0.05);
 }
 
 .heart-icon {
@@ -213,10 +167,6 @@
     transition: color 0.2s;*/
 }
 
-.contact-icon {
-    font-size: 1.1rem;
-    width: 20px;
-}
 
 .contact-text {
     color: #495057;
@@ -228,24 +178,6 @@
 
 .contact-item:hover .contact-text {
     color: #0056b3;
-}
-/* Hide scrollbar in WebKit browsers */
-.horizontal-scroll-container::-webkit-scrollbar {
-    display: none;
-}
-
-/* Smooth scrolling */
-.horizontal-scroll-container {
-    scroll-behavior: smooth;
-}
-
-/* Optional: Add scroll snap points */
-.horizontal-scroll-container.snap {
-    scroll-snap-type: x mandatory;
-}
-
-.horizontal-scroll-container.snap > * {
-    scroll-snap-align: start;
 }
 
 .image-frame {
@@ -268,30 +200,6 @@
 
 .gallery-image:hover {
     transform: scale(1.05);
-}
-
-.image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.overlay-icon {
-    width: 60px;
-    height: 60px;
-    background: rgba(138, 86, 178, 0.9);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 24px;
 }
 
 /* Hide scrollbar but keep functionality */
@@ -357,14 +265,6 @@
     align-items: flex-start;
 }
 
-.company-deparments {
-    display: flex;
-    width: 416px;
-    padding: 8px 0px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-}
 
 .hours-row {
     display: flex;
