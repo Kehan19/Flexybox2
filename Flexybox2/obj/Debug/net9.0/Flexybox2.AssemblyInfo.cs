@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Flexybox2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40deacd2b6cdd9f9c3a9a090e9af7b4e0c0cb45d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Flexybox2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Flexybox2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

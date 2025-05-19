@@ -78,4 +78,5 @@ C:\Users\xxken\RiderProjects\Flexybox2\Flexybox2\obj\Debug\net9.0\Flexybox2.pdb
 C:\Users\xxken\RiderProjects\Flexybox2\Flexybox2\obj\Debug\net9.0\Flexybox2.genruntimeconfig.cache
 C:\Users\xxken\RiderProjects\Flexybox2\Flexybox2\obj\Debug\net9.0\ref\Flexybox2.dll
 C:\Users\xxken\RiderProjects\Flexybox2\Flexybox2\obj\Debug\net9.0\compressed\cfvj1oab5v-uiszi5b694.gz
-C:\Users\xxken\RiderProjects\Flexybox2\Flexybox2\obj\Debug\net9.0\compressed\58l6b694t1-n5atlazc1a.gz
+C:\Users\xxken\RiderProjects\Flexybox2\Flexybox2\obj\Debug\net9.0\Flexybox2.sourcelink.json
+C:\Users\xxken\RiderProjects\Flexybox2\Flexybox2\obj\Debug\net9.0\compressed\58l6b694t1-fqjny9gp4n.gz

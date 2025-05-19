@@ -404,3 +404,21 @@
     background-repeat: no-repeat;
     display: inline-block;
 }
+
+.scrollable-buttons-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    margin-bottom: 16px;
+}
+
+.category-buttons {
+    display: flex;
+    flex-wrap: nowrap; /* Change from wrap to nowrap */
+    gap: 8px;
+    padding: 4px 0;
+    width: max-content; /* Add this */
+}

@@ -77,26 +77,26 @@
 
 <div class="opening-hours">
     <h3>Opening hours</h3>
-    
-    <div class="category-buttons">
-        <button @onclick="SelectRestaurant" 
-                class="category-btn @(selectedCategory == "Restaurant" ? "active" : "")">
-            Restaurant
-        </button>
-        <button @onclick="SelectTakeaway" 
-                class="category-btn @(selectedCategory == "Takeaway" ? "active" : "")">
-            Takeaway
-        </button>
-        <button @onclick="SelectBuffet" 
-                class="category-btn @(selectedCategory == "Buffet" ? "active" : "")">
-            Buffet
-        </button>
-        <button @onclick="SelectSpecialEvents" 
-                class="category-btn @(selectedCategory == "SpecialEvents" ? "active" : "")">
-            Special Events
-        </button>
-    </div>
-    
+    <div class="scrollable-buttons-container">
+        <div class="category-buttons">
+            <button @onclick="SelectRestaurant" 
+                    class="category-btn @(selectedCategory == "Restaurant" ? "active" : "")">
+                Restaurant
+            </button>
+            <button @onclick="SelectTakeaway" 
+                    class="category-btn @(selectedCategory == "Takeaway" ? "active" : "")">
+                Takeaway
+            </button>
+            <button @onclick="SelectBuffet" 
+                    class="category-btn @(selectedCategory == "Buffet" ? "active" : "")">
+                Buffet
+            </button>
+            <button @onclick="SelectSpecialEvents" 
+                    class="category-btn @(selectedCategory == "SpecialEvents" ? "active" : "")">
+                Special Events
+            </button>
+        </div>
+    </div>    
     <div class="hours-display">
         @foreach (var day in GetDisplayHours())
         {

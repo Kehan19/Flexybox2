@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZGP6JM7bx+H3f9YapT4MQoy068dc74NEmKyG9A/0abQ=",
+  "Hash": "3OdLdiegjeOqy07p5RQdWCO0kCcm3b4eCD9O5ZXep44=",
   "Source": "Flexybox2",
   "BasePath": "_content/Flexybox2",
   "Mode": "Default",
@@ -122,12 +122,12 @@
       "OriginalItemSpec": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-n5atlazc1a.gz",
+      "Identity": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-fqjny9gp4n.gz",
       "SourceId": "Flexybox2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Flexybox2",
-      "RelativePath": "CSS/Company#[.{fingerprint=n5atlazc1a}]?.css.gz",
+      "RelativePath": "CSS/Company#[.{fingerprint=fqjny9gp4n}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -136,8 +136,8 @@
       "RelatedAsset": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\wwwroot\\CSS\\Company.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "lj442fwikz",
-      "Integrity": "/7E3Nj4a0NWFax269aBH/F4yW6GE+Sr91sBOK3XMmxM=",
+      "Fingerprint": "obn9w4a7dy",
+      "Integrity": "rBEL8pGpSeaLUpyJRTspHVUZBLmFfhwWodgcXk/ELBc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\wwwroot\\CSS\\Company.css"
@@ -1123,8 +1123,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "n5atlazc1a",
-      "Integrity": "VVqzBNuL/sb9RUIeNhCE6fKQWkOq/5lXxDiHy6hEN1k=",
+      "Fingerprint": "fqjny9gp4n",
+      "Integrity": "pylddZ7NlywC46EyxqPpPiZFv5yclEfxXW+dqF5o0Jg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\CSS\\Company.css"
@@ -2439,12 +2439,12 @@
     },
     {
       "Route": "CSS/Company.css",
-      "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-n5atlazc1a.gz",
+      "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-fqjny9gp4n.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000486381323"
+          "Quality": "0.000456829603"
         }
       ],
       "ResponseHeaders": [
@@ -2454,15 +2454,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2055"
+          "Value": "2188"
         },
         {
           "Name": "ETag",
-          "Value": "\"/7E3Nj4a0NWFax269aBH/F4yW6GE+Sr91sBOK3XMmxM=\""
+          "Value": "\"rBEL8pGpSeaLUpyJRTspHVUZBLmFfhwWodgcXk/ELBc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 12:21:15 GMT"
+          "Value": "Mon, 19 May 2025 13:18:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2482,13 +2482,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"VVqzBNuL/sb9RUIeNhCE6fKQWkOq/5lXxDiHy6hEN1k=\""
+          "Value": "W/\"pylddZ7NlywC46EyxqPpPiZFv5yclEfxXW+dqF5o0Jg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-VVqzBNuL/sb9RUIeNhCE6fKQWkOq/5lXxDiHy6hEN1k="
+          "Value": "sha256-pylddZ7NlywC46EyxqPpPiZFv5yclEfxXW+dqF5o0Jg="
         }
       ]
     },
@@ -2503,7 +2503,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8358"
+          "Value": "8794"
         },
         {
           "Name": "Content-Type",
@@ -2511,11 +2511,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VVqzBNuL/sb9RUIeNhCE6fKQWkOq/5lXxDiHy6hEN1k=\""
+          "Value": "\"pylddZ7NlywC46EyxqPpPiZFv5yclEfxXW+dqF5o0Jg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 12:21:15 GMT"
+          "Value": "Mon, 19 May 2025 13:18:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2525,13 +2525,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-VVqzBNuL/sb9RUIeNhCE6fKQWkOq/5lXxDiHy6hEN1k="
+          "Value": "sha256-pylddZ7NlywC46EyxqPpPiZFv5yclEfxXW+dqF5o0Jg="
         }
       ]
     },
     {
       "Route": "CSS/Company.css.gz",
-      "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-n5atlazc1a.gz",
+      "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-fqjny9gp4n.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2540,7 +2540,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2055"
+          "Value": "2188"
         },
         {
           "Name": "Content-Type",
@@ -2548,11 +2548,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/7E3Nj4a0NWFax269aBH/F4yW6GE+Sr91sBOK3XMmxM=\""
+          "Value": "\"rBEL8pGpSeaLUpyJRTspHVUZBLmFfhwWodgcXk/ELBc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 12:21:15 GMT"
+          "Value": "Mon, 19 May 2025 13:18:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2570,18 +2570,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/7E3Nj4a0NWFax269aBH/F4yW6GE+Sr91sBOK3XMmxM="
+          "Value": "sha256-rBEL8pGpSeaLUpyJRTspHVUZBLmFfhwWodgcXk/ELBc="
         }
       ]
     },
     {
-      "Route": "CSS/Company.n5atlazc1a.css",
-      "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-n5atlazc1a.gz",
+      "Route": "CSS/Company.fqjny9gp4n.css",
+      "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-fqjny9gp4n.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000486381323"
+          "Quality": "0.000456829603"
         }
       ],
       "ResponseHeaders": [
@@ -2591,15 +2591,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2055"
+          "Value": "2188"
         },
         {
           "Name": "ETag",
-          "Value": "\"/7E3Nj4a0NWFax269aBH/F4yW6GE+Sr91sBOK3XMmxM=\""
+          "Value": "\"rBEL8pGpSeaLUpyJRTspHVUZBLmFfhwWodgcXk/ELBc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 12:21:15 GMT"
+          "Value": "Mon, 19 May 2025 13:18:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2619,13 +2619,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"VVqzBNuL/sb9RUIeNhCE6fKQWkOq/5lXxDiHy6hEN1k=\""
+          "Value": "W/\"pylddZ7NlywC46EyxqPpPiZFv5yclEfxXW+dqF5o0Jg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "n5atlazc1a"
+          "Value": "fqjny9gp4n"
         },
         {
           "Name": "label",
@@ -2633,12 +2633,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-VVqzBNuL/sb9RUIeNhCE6fKQWkOq/5lXxDiHy6hEN1k="
+          "Value": "sha256-pylddZ7NlywC46EyxqPpPiZFv5yclEfxXW+dqF5o0Jg="
         }
       ]
     },
     {
-      "Route": "CSS/Company.n5atlazc1a.css",
+      "Route": "CSS/Company.fqjny9gp4n.css",
       "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\wwwroot\\CSS\\Company.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2648,7 +2648,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8358"
+          "Value": "8794"
         },
         {
           "Name": "Content-Type",
@@ -2656,11 +2656,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VVqzBNuL/sb9RUIeNhCE6fKQWkOq/5lXxDiHy6hEN1k=\""
+          "Value": "\"pylddZ7NlywC46EyxqPpPiZFv5yclEfxXW+dqF5o0Jg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 12:21:15 GMT"
+          "Value": "Mon, 19 May 2025 13:18:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2670,7 +2670,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "n5atlazc1a"
+          "Value": "fqjny9gp4n"
         },
         {
           "Name": "label",
@@ -2678,13 +2678,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-VVqzBNuL/sb9RUIeNhCE6fKQWkOq/5lXxDiHy6hEN1k="
+          "Value": "sha256-pylddZ7NlywC46EyxqPpPiZFv5yclEfxXW+dqF5o0Jg="
         }
       ]
     },
     {
-      "Route": "CSS/Company.n5atlazc1a.css.gz",
-      "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-n5atlazc1a.gz",
+      "Route": "CSS/Company.fqjny9gp4n.css.gz",
+      "AssetFile": "C:\\Users\\xxken\\RiderProjects\\Flexybox2\\Flexybox2\\obj\\Debug\\net9.0\\compressed\\58l6b694t1-fqjny9gp4n.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2693,7 +2693,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2055"
+          "Value": "2188"
         },
         {
           "Name": "Content-Type",
@@ -2701,11 +2701,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/7E3Nj4a0NWFax269aBH/F4yW6GE+Sr91sBOK3XMmxM=\""
+          "Value": "\"rBEL8pGpSeaLUpyJRTspHVUZBLmFfhwWodgcXk/ELBc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 19 May 2025 12:21:15 GMT"
+          "Value": "Mon, 19 May 2025 13:18:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2723,7 +2723,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "n5atlazc1a"
+          "Value": "fqjny9gp4n"
         },
         {
           "Name": "label",
@@ -2731,7 +2731,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/7E3Nj4a0NWFax269aBH/F4yW6GE+Sr91sBOK3XMmxM="
+          "Value": "sha256-rBEL8pGpSeaLUpyJRTspHVUZBLmFfhwWodgcXk/ELBc="
         }
       ]
     },
