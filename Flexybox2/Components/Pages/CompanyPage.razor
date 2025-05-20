@@ -44,11 +44,6 @@ else
         isFavorite = await CompanyService.IsFavoriteAsync(Id);
     }
     
-    private void GoBack()
-    {
-        NavigationManager.NavigateTo("/");
-    }
-    
     private async Task ToggleFavorite()
     {
         if (isFavorite)
@@ -134,16 +129,5 @@ else
             Url = "/images/Gallery/restaurant.jpg",
             Alt = "Food display"
         }
-        /*new Gallery.GalleryImage
-        {
-            Url = "/images/dining-area.jpg",
-            Alt = "Dining area"
-        },
-        new Gallery.GalleryImage
-        {
-            Url = "/images/kitchen.jpg",
-            Alt = "Kitchen view"
-        }*/
-
     ];
 }
